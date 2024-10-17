@@ -1,11 +1,19 @@
+#home-section,
+#showcase-section {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+
 .video-background {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
+    overflow: hidden;
     pointer-events: none;
 }
 
@@ -15,21 +23,14 @@
     left: 50%;
     min-width: 100%;
     min-height: 100%;
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
     z-index: -1;
     transform: translate(-50%, -50%);
     object-fit: cover;
 }
 
-.content {
-    position: relative;
-    z-index: 1;
-    color: white;
-}
-
 #home-section {
-    position: relative;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -37,26 +38,33 @@
     text-align: center;
 }
 
-.container {
-    padding: 0;
-    margin: 0;
+#showcase-section {
+    padding: 50px 0;
 }
 
 .trunk-item {
-    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .trunk-image {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     transition: transform 0.3s ease;
 }
 
 .trunk-description {
-   background-color: rgba(0, 0, 0, 0.7);
-   display: none;
- border-radius: 10px;
+    background-color: black;
+    padding: 10px;
+    display: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-
+.trunk-item:hover .trunk-description {
+    display: block;
+}
