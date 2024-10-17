@@ -1,8 +1,8 @@
 #home-section,
-#showcase-section,{
-position: relative;
-z-index: 1;
-color: white;
+#showcase-section {
+    position: relative;
+    z-index: 1;
+    color: white;
 }
 
 
