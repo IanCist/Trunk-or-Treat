@@ -1,8 +1,8 @@
 #home-section,
-#showcase-section {
-    position: relative;
-    z-index: 1;
-    color: white;
+#showcase-section,{
+position: relative;
+z-index: 1;
+color: white;
 }
 
 
@@ -67,4 +67,70 @@
 
 .trunk-item:hover .trunk-description {
     display: block;
+}
+
+#schedule-section {
+    padding: 50px 0;
+}
+
+.schedule-item {
+    margin-bottom: 20px;
+    background-color: #343a40;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-heading {
+    cursor: pointer;
+    background-color: #495057;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.event-heading:hover {
+    background-color: #6c757d;
+}
+
+.event-details {
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.event-description {
+    color: white;
+}
+
+.event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#schedule-section {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-light .nav-link {
+    color: white;
+}
+
+body {
+    font-family: "beelzebrush-black-bb", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }

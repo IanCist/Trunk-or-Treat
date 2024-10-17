@@ -3,14 +3,19 @@ $(document).ready(function () {
         $('#more-info').toggle();
     });
 
-  
-    $('.trunk-item').hover (
+
+    $('.trunk-item').hover(
         function () {
-            $(this).find('.trunk-description').stop(true, true).slideDown();
+            $(this).find('.trunk-description').slideDown();
         },
         function () {
-            $(this).find('.trunk-description').stop(true, true).slideUp();
+            $(this).find('.trunk-description').slideUp();
         }
     );
+
+    $('.event-heading').on('click', function () {
+        $(this).next('.event-details').slideToggle(); 
+    });
 });
+
 
